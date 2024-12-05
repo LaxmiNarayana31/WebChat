@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain-community = "*"
+python-dotenv = "*"
+streamlit = "*"
+beautifulsoup4 = "==4.12.2"
+langchain-core = "*"
+langchain = "==0.3.8"
+faiss-cpu = "*"
+google-generativeai = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+main = "streamlit run main.py"
