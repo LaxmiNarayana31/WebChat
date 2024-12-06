@@ -15,7 +15,6 @@ def sidebar():
                 # Reset selected chat index
                 st.session_state.selected_chat_index = None
 
-                # Create vector store from URL
                 vector_store = get_vectorstore_from_url(website_url)
 
                 # Only proceed if vector store is successfully created
