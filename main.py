@@ -1,4 +1,6 @@
 import streamlit as st
+import os
+import google.generativeai as genai
 from dotenv import load_dotenv
 from components.sidebar import sidebar
 from components.chat import chat_interface
@@ -6,6 +8,7 @@ from components.chat import chat_interface
 
 def main():
     load_dotenv()
+    genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
     st.set_page_config(page_title="WebChat", page_icon="🌐")
 
     # Initialize session state variables
